@@ -1,0 +1,28 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "test": "echo skipping...",
+    "predeploy": "yarn build",
+    "deploy": "cd public; now --prod",
+    "open": "open https://s4e-ikon-proofs.eswat2.now.sh"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "7.1.1",
+    "rangetouch": "2.0.0",
+    "rollup": "1.31.0",
+    "rollup-plugin-livereload": "1.0.4",
+    "rollup-plugin-svelte": "5.1.1",
+    "rollup-plugin-terser": "5.2.0",
+    "s4e-icons": "0.0.24",
+    "s4e-ikons": "0.0.9",
+    "svelte": "3.18.1"
+  },
+  "dependencies": {
+    "sirv-cli": "0.4.5"
+  }
+}
