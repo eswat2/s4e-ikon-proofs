@@ -1,23 +1,23 @@
 {
   "name": "svelte-app",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "test": "echo skipping...",
-    "predeploy": "yarn build",
+    "prebuild": "yarn format",
+    "predeploy": "yarn build; yarn version --patch",
     "deploy": "cd dist; ln -s ../.now .vercel; vc --prod",
+    "spell": "cspell *.{html,js,md,ts} src/*.{css,tsx}",
     "cc": "prettier --check src",
-    "format": "prettier --write src",
+    "format": "prettier --write cSpell.json index.html src",
     "open": "open https://s4e-ikon-proofs.vercel.app"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.30",
     "prettier": "2.4.1",
     "rangetouch": "2.0.1",
-    "s4e-icons": "0.0.260",
-    "s4e-ikons": "0.0.233",
     "svelte": "3.44.1",
     "vite": "2.6.13"
   }

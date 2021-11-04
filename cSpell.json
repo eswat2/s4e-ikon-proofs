@@ -1,11 +1,22 @@
 // cSpell Settings
 {
   // Version of the setting file.  Always 0.1
-  "version": "0.1",
+  "version": "0.2",
   // language - current active spelling language
   "language": "en",
   // words - list of words to be always considered correct
-  "words": ["clrs", "eswat", "predeploy", "rangetouch", "sirv"],
+  "words": [
+    "clrs",
+    "eswat",
+    "parens",
+    "prebuild",
+    "predeploy",
+    "proto",
+    "rangetouch",
+    "sirv",
+    "sveltejs",
+    "vite"
+  ],
   "ignorePaths": [
     "public/build/**",
     "node_modules/**",
