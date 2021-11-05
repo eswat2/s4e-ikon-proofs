@@ -14,7 +14,15 @@
   };
 </script>
 
-<div class="ikon" on:click={handleClick} width={size} height={size} title={key}>
+<div
+  class="ikon"
+  on:click={handleClick}
+  width={size}
+  height={size}
+  title={key}
+  role="button"
+  aria-label="title"
+>
   <proto-ikon-loader hex={color} name={key} {size} />
 </div>
 
