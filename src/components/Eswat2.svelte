@@ -1,10 +1,10 @@
 <script>
-  let url = 'https://eswat2.github.io';
-  let who = 'eswat2';
+  let url = "https://eswat2.github.io"
+  let who = "eswat2"
 </script>
 
 <a href={url} class="eswat2" aria-label={who} title={who}>
-  <proto-ikon-loader-wc name="fingerprint" size="24" />
+  <proto-ikon-loader name="fingerprint" size="24" label="eswat2" />
 </a>
 
 <style>
@@ -16,9 +16,9 @@
     height: 24px;
   }
   a {
-    fill: var(--clrs-gray);
+    color: var(--clrs-gray);
   }
   a:hover {
-    fill: var(--clrs-navy);
+    color: var(--clrs-navy);
   }
 </style>
