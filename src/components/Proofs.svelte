@@ -4,7 +4,7 @@
 
   export let size = undefined;
   // NOTE:  this is loaded on the toplevel page... [ see index.html ]
-  const Keys = window.protoIkons.ikons;
+  const Keys = window.protoIkons.ikons.filter(key => !key.includes('-alt'));
 </script>
 
 <div class="proofs">
