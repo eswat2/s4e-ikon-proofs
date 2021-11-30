@@ -6,13 +6,16 @@
   "language": "en",
   // words - list of words to be always considered correct
   "words": [
+    "bada",
     "clrs",
     "eswat",
+    "neue",
     "parens",
     "prebuild",
     "predeploy",
     "proto",
     "rangetouch",
+    "roboto",
     "sirv",
     "sveltejs",
     "vite"

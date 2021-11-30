@@ -1,13 +1,20 @@
 <script>
-  import { Eswat2, Proofs, Slider } from "./components"
+  import { Eswat2, Proofs, Slider } from './components';
 
-  let min = 24
-  let max = 480
-  let step = 4
-  let value = 24
-  let width = 200
-  let tag = "px"
+  let min = 24;
+  let max = 480;
+  let step = 4;
+  let value = 24;
+  let width = 200;
+  let tag = 'px';
 </script>
+
+<main>
+  <Eswat2 />
+  <h1>Ikon Proofs</h1>
+  <Slider {min} {max} {step} bind:value {width} {tag} />
+  <Proofs size={value} />
+</main>
 
 <style>
   :root {
@@ -35,7 +42,7 @@
   }
   main {
     color: var(--clrs-navy);
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-align: center;
     padding: 1em;
@@ -49,10 +56,3 @@
     font-weight: 100;
   }
 </style>
-
-<main>
-  <Eswat2 />
-  <h1>Ikon Proofs</h1>
-  <Slider {min} {max} {step} bind:value {width} {tag} />
-  <Proofs size={value} />
-</main>
