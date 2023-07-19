@@ -10,18 +10,18 @@
     "prebuild": "yarn format",
     "predeploy": "yarn build; yarn version --patch",
     "deploy": "cd dist; ln -s ../.now .vercel; vc --prod",
-    "spell": "cspell *.{html,js,md} src/*.{css,js,svelte}",
-    "cc": "prettier --check src",
-    "format": "prettier --write cSpell.json index.html src",
+    "spell": "cspell *.{html,js,md} src/*/*.{css,js,svelte}",
+    "cc": "prettier --check src/*/*.{css,js,svelte}",
+    "format": "prettier --write cSpell.json index.html src/*/*.{css,js,svelte}",
     "open": "open https://s4e-ikon-proofs.vercel.app"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "2.4.2",
     "cspell": "6.31.2",
     "prettier": "3.0.0",
-    "prettier-plugin-svelte": "2.10.1",
+    "prettier-plugin-svelte": "3.0.0",
     "rangetouch": "2.0.1",
-    "svelte": "4.0.5",
+    "svelte": "4.1.0",
     "vite": "4.4.4"
   }
 }
