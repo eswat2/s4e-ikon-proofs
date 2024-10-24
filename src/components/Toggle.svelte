@@ -1,8 +1,8 @@
 <script>
-  export let key = undefined;
-  export let size = undefined;
+  let { key, size } = $props();
 
-  let selected = false;
+  let selected = $state(false);
+  let color = $derived(selected ? 'red' : 'navy');
 
   const handleClick = () => {
     selected = !selected;
@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="ikon"
+  class={`ikon ${color}`}
   on:click={handleClick}
   width={size}
   height={size}
@@ -26,10 +26,13 @@
   .ikon {
     display: flex;
     margin: 5px;
-    color: var(--clrs-navy);
   }
 
-  .ikon[selected='true'] {
+  .navy {
+    color: var(--clrs-navy);
+  }  
+  
+  .red {
     color: var(--clrs-red);
   }
 </style>
