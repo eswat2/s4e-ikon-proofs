@@ -30,8 +30,8 @@
 
   .navy {
     color: var(--clrs-navy);
-  }  
-  
+  }
+
   .red {
     color: var(--clrs-red);
   }
