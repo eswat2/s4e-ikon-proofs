@@ -11,11 +11,13 @@
 
 <div
   class={`ikon ${color}`}
-  on:click={handleClick}
+  onclick={handleClick}
+  onkeypress={e => e.key === 'Enter' && handleClick()}
   width={size}
   height={size}
   title={key}
   role="button"
+  tabindex="0"
   aria-label="title"
   {selected}
 >
