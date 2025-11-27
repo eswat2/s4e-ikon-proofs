@@ -10,7 +10,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "test": "echo skipping...",
-    "prebuild": "yarn format",
+    "prebuild": "echo skipping yarn format",
     "predeploy": "yarn build; yarn version --patch",
     "deploy": "cd dist; ln -s ../.now .vercel; vc --prod",
     "spell": "cspell './src/**/*.{css,js,ts,svelte}'",
